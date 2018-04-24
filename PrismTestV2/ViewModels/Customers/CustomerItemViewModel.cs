@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Navigation;
 
 namespace PrismTestV2.ViewModels.Customers
 {
@@ -15,6 +16,11 @@ namespace PrismTestV2.ViewModels.Customers
         {
             Name = name;
             Surname = surname;
+        }
+
+        public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
+        {
+            base.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
         }
 
         private string _name;

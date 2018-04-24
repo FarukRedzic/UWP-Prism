@@ -15,5 +15,7 @@
             <TextBlock Text="Customeri..."/>
             <ItemsControl ItemsSource="{Binding Customers}" ItemTemplate="{StaticResource CustomerItemPage}"/>
         </StackPanel>
+        
+        
     </Grid>
 </storeApps:VisualStateAwarePage>

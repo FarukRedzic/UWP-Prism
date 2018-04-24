@@ -103,6 +103,9 @@
     <Compile Include="ViewModels\Customers\CustomerListViewModel.cs" />
     <Compile Include="ViewModels\Main\MainViewModel.cs" />
     <Compile Include="ViewModels\Subscriber\SubscriberViewModel.cs" />
+    <Compile Include="Views\Customers\CustomerItemPage.xaml.cs">
+      <DependentUpon>CustomerItemPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Customers\CustomerListPage.xaml.cs">
       <DependentUpon>CustomerListPage.xaml</DependentUpon>
     </Compile>
@@ -149,6 +152,10 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="Themes\DataTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Customers\CustomerItemPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

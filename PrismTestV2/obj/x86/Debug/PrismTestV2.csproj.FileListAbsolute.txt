@@ -322,3 +322,8 @@ C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\PrismTes
 C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\Themes\DataTemplates.xbf
 C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Themes\DataTemplates.xaml
 C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Themes\DataTemplates.xbf
+C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\Views\Customers\CustomerItemPage.xbf
+C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Views\Customers\CustomerItemPage.g.i.cs
+C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Views\Customers\CustomerItemPage.g.cs
+C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Views\Customers\CustomerItemPage.xaml
+C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\obj\x86\Debug\Views\Customers\CustomerItemPage.xbf

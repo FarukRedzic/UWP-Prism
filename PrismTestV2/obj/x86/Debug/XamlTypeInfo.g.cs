@@ -180,39 +180,41 @@ namespace PrismTestV2.PrismTestV2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[16];
             _typeNameTable[0] = "Microsoft.Practices.Prism.Mvvm.MvvmAppBase";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Boolean";
-            _typeNameTable[3] = "Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage";
+            _typeNameTable[3] = "PrismTestV2.Views.Customers.CustomerItemPage";
             _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[6] = "Int32";
-            _typeNameTable[7] = "Microsoft.Practices.Prism.Commands.DelegateCommand";
-            _typeNameTable[8] = "Microsoft.Practices.Prism.Commands.DelegateCommandBase";
-            _typeNameTable[9] = "Object";
-            _typeNameTable[10] = "Microsoft.Practices.Prism.Mvvm.ViewModelLocator";
-            _typeNameTable[11] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[12] = "PrismTestV2.Views.Customers.CustomerListPage";
-            _typeNameTable[13] = "PrismTestV2.Views.Main.MainPage";
-            _typeNameTable[14] = "PrismTestV2.Views.Subscriber.SubscriberPage";
+            _typeNameTable[6] = "Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage";
+            _typeNameTable[7] = "Int32";
+            _typeNameTable[8] = "Microsoft.Practices.Prism.Commands.DelegateCommand";
+            _typeNameTable[9] = "Microsoft.Practices.Prism.Commands.DelegateCommandBase";
+            _typeNameTable[10] = "Object";
+            _typeNameTable[11] = "Microsoft.Practices.Prism.Mvvm.ViewModelLocator";
+            _typeNameTable[12] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[13] = "PrismTestV2.Views.Customers.CustomerListPage";
+            _typeNameTable[14] = "PrismTestV2.Views.Main.MainPage";
+            _typeNameTable[15] = "PrismTestV2.Views.Subscriber.SubscriberPage";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[16];
             _typeTable[0] = typeof(global::Microsoft.Practices.Prism.Mvvm.MvvmAppBase);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::System.Boolean);
-            _typeTable[3] = typeof(global::Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage);
+            _typeTable[3] = typeof(global::PrismTestV2.Views.Customers.CustomerItemPage);
             _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[6] = typeof(global::System.Int32);
-            _typeTable[7] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommand);
-            _typeTable[8] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommandBase);
-            _typeTable[9] = typeof(global::System.Object);
-            _typeTable[10] = typeof(global::Microsoft.Practices.Prism.Mvvm.ViewModelLocator);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[12] = typeof(global::PrismTestV2.Views.Customers.CustomerListPage);
-            _typeTable[13] = typeof(global::PrismTestV2.Views.Main.MainPage);
-            _typeTable[14] = typeof(global::PrismTestV2.Views.Subscriber.SubscriberPage);
+            _typeTable[6] = typeof(global::Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage);
+            _typeTable[7] = typeof(global::System.Int32);
+            _typeTable[8] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommand);
+            _typeTable[9] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommandBase);
+            _typeTable[10] = typeof(global::System.Object);
+            _typeTable[11] = typeof(global::Microsoft.Practices.Prism.Mvvm.ViewModelLocator);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[13] = typeof(global::PrismTestV2.Views.Customers.CustomerListPage);
+            _typeTable[14] = typeof(global::PrismTestV2.Views.Main.MainPage);
+            _typeTable[15] = typeof(global::PrismTestV2.Views.Subscriber.SubscriberPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -247,10 +249,11 @@ namespace PrismTestV2.PrismTestV2_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_3_VisualStateAwarePage() { return new global::Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage(); }
-        private object Activate_12_CustomerListPage() { return new global::PrismTestV2.Views.Customers.CustomerListPage(); }
-        private object Activate_13_MainPage() { return new global::PrismTestV2.Views.Main.MainPage(); }
-        private object Activate_14_SubscriberPage() { return new global::PrismTestV2.Views.Subscriber.SubscriberPage(); }
+        private object Activate_3_CustomerItemPage() { return new global::PrismTestV2.Views.Customers.CustomerItemPage(); }
+        private object Activate_6_VisualStateAwarePage() { return new global::Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage(); }
+        private object Activate_13_CustomerListPage() { return new global::PrismTestV2.Views.Customers.CustomerListPage(); }
+        private object Activate_14_MainPage() { return new global::PrismTestV2.Views.Main.MainPage(); }
+        private object Activate_15_SubscriberPage() { return new global::PrismTestV2.Views.Subscriber.SubscriberPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -276,11 +279,10 @@ namespace PrismTestV2.PrismTestV2_XamlTypeInfo
                 xamlType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage
+            case 3:   //  PrismTestV2.Views.Customers.CustomerItemPage
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_VisualStateAwarePage;
-                userType.AddMemberName("MinimalLayoutWidth");
-                userType.AddMemberName("GoBackCommand");
+                userType.Activator = Activate_3_CustomerItemPage;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -292,52 +294,60 @@ namespace PrismTestV2.PrismTestV2_XamlTypeInfo
                 xamlType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Int32
+            case 6:   //  Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage
+                userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_VisualStateAwarePage;
+                userType.AddMemberName("MinimalLayoutWidth");
+                userType.AddMemberName("GoBackCommand");
+                xamlType = userType;
+                break;
+
+            case 7:   //  Int32
                 xamlType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Microsoft.Practices.Prism.Commands.DelegateCommand
+            case 8:   //  Microsoft.Practices.Prism.Commands.DelegateCommand
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Practices.Prism.Commands.DelegateCommandBase"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Microsoft.Practices.Prism.Commands.DelegateCommandBase
+            case 9:   //  Microsoft.Practices.Prism.Commands.DelegateCommandBase
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 9:   //  Object
+            case 10:   //  Object
                 xamlType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Microsoft.Practices.Prism.Mvvm.ViewModelLocator
+            case 11:   //  Microsoft.Practices.Prism.Mvvm.ViewModelLocator
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("AutoWireViewModel");
                 xamlType = userType;
                 break;
 
-            case 11:   //  Windows.UI.Xaml.DependencyObject
+            case 12:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  PrismTestV2.Views.Customers.CustomerListPage
+            case 13:   //  PrismTestV2.Views.Customers.CustomerListPage
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage"));
-                userType.Activator = Activate_12_CustomerListPage;
+                userType.Activator = Activate_13_CustomerListPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  PrismTestV2.Views.Main.MainPage
+            case 14:   //  PrismTestV2.Views.Main.MainPage
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_14_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  PrismTestV2.Views.Subscriber.SubscriberPage
+            case 15:   //  PrismTestV2.Views.Subscriber.SubscriberPage
                 userType = new global::PrismTestV2.PrismTestV2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage"));
-                userType.Activator = Activate_14_SubscriberPage;
+                userType.Activator = Activate_15_SubscriberPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
