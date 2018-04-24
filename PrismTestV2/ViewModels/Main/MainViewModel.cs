@@ -48,7 +48,7 @@ namespace PrismTestV2.ViewModels.Main
 
         public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
         {
-            _eventAggregator.GetEvent<EventNameTest>().Subscribe(EventHandlerMethod, ThreadOption.BackgroundThread); //ThreadOption.PublisherThread, ThreadOption.UIThread
+            _eventAggregator.GetEvent<EventNameTest>().Subscribe(EventHandlerMethod, ThreadOption.UIThread); //ThreadOption.PublisherThread, ThreadOption.UIThread
             base.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
         }
 
@@ -75,7 +75,7 @@ namespace PrismTestV2.ViewModels.Main
 
         private void EventHandlerMethod(string eventArg)
         {
-            string test = eventArg;
+            Test = eventArg;
         }
     }
 }

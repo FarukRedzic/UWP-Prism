@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-24T07:22:10.371</Modified>
+      <Modified>2018-04-24T09:00:03.890</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\PrismTestV2.exe">
       <PackagePath>entrypoint\PrismTestV2.exe</PackagePath>
-      <Modified>2018-04-24T07:22:09.360</Modified>
+      <Modified>2018-04-24T09:00:02.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FarukRedzic\.nuget\packages\commonservicelocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -779,7 +779,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\PrismTestV2.xr.xml">
       <PackagePath>PrismTestV2.xr.xml</PackagePath>
-      <Modified>2018-04-24T07:20:51.245</Modified>
+      <Modified>2018-04-24T08:56:13.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -788,11 +788,11 @@
     <AppxPackagedFile Include="C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-24T07:22:09.864</Modified>
+      <Modified>2018-04-24T09:00:03.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FarukRedzic\source\repos\PrismTestV2\PrismTestV2\bin\x86\Debug\Core\PrismTestV2.exe">
       <PackagePath>PrismTestV2.exe</PackagePath>
-      <Modified>2018-04-24T07:22:10.365</Modified>
+      <Modified>2018-04-24T09:00:03.885</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

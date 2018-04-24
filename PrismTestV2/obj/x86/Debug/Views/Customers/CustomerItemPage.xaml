@@ -11,7 +11,8 @@
         <StackPanel Orientation="Vertical">
             <TextBlock Text="{Binding Name}" Foreground="Black"/>
             <TextBlock Text="{Binding Surname}" Foreground="Black"/>
-            <TextBlock Text="{Binding Surname}" Foreground="Black"/>
+
+            <Button Content="Introduce!" Command="{Binding IntroduceCommand}"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -19,8 +19,8 @@ namespace PrismTestV2.ViewModels.Customers
         public CustomerListViewModel(IUnityContainer _container)
         {
             Customers = new ObservableCollection<CustomerItemViewModel>();
-            Customers.Add(new CustomerItemViewModel("Faruk", "Redzic"));
-            Customers.Add(new CustomerItemViewModel("Faruk", "Redzic"));
+            Customers.Add(new CustomerItemViewModel("Indira", "Djeldum"));
+            Customers.Add(new CustomerItemViewModel("Edin", "Music"));
             Customers.Add(new CustomerItemViewModel("Faruk", "Redzic"));
         }
 

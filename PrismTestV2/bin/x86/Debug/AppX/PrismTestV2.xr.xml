@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="IntroduceCommand" />
     <RootPropertyPathName Name="Surname" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Customers" />
     <RootPropertyPathName Name="GoToCustomersCommand" />
     <RootPropertyPathName Name="TestCommand" />
     <RootPropertyPathName Name="Test" />
+    <RootPropertyPathName Name="GoToMainWindowCommand" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.MvvmAppBase">
@@ -41,6 +43,10 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Microsoft.Practices.Prism.StoreApps.VisualStateAwarePage">
       <RootProperty Name="Content" />
@@ -56,10 +62,6 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="PrismTestV2.Views.Customers.CustomerListPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Command" />
-    </RootType>
     <RootType FullName="PrismTestV2.Views.Main.MainPage" />
     <RootType FullName="PrismTestV2.Views.Subscriber.SubscriberPage" />
   </Roots.RootTypes>

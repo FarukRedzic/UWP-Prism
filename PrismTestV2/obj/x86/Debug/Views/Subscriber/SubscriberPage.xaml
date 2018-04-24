@@ -15,6 +15,7 @@
             <TextBlock VerticalAlignment="Center" Foreground="Black" Text="{Binding Test}"/>
 
             <Button Content="Click me" Command="{Binding TestCommand}"/>
+            <Button Content="Go to main window" Command="{Binding GoToMainWindowCommand}"/>
         </StackPanel>
     </Grid>
 </storeApps:VisualStateAwarePage>

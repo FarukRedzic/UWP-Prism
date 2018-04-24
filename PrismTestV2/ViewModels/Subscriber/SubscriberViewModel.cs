@@ -1,7 +1,9 @@
 ﻿using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Mvvm;
+using Microsoft.Practices.Prism.Mvvm.Interfaces;
 using Prism.Events;
 using PrismTestV2.Events;
+using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Navigation;
 
@@ -11,6 +13,7 @@ namespace PrismTestV2.ViewModels.Subscriber
     {
         #region Fields
         IEventAggregator _eventAggregator;
+        INavigationService _navigationService;
         private string _test;
         #endregion
 
@@ -25,13 +28,16 @@ namespace PrismTestV2.ViewModels.Subscriber
 
         #region Commands
         public DelegateCommand TestCommand { get; set; }
+        public DelegateCommand GoToMainWindowCommand { get; set; }
         #endregion
 
-        public SubscriberViewModel(IEventAggregator eventAggregator)
+        public SubscriberViewModel(IEventAggregator eventAggregator, INavigationService navigationService)
         {
             Test = "Subscriber view";
             _eventAggregator = eventAggregator;
+            _navigationService = navigationService;
             TestCommand = new DelegateCommand(ExecuteCommand, CanExecute);
+            GoToMainWindowCommand = new DelegateCommand(GoToMainWindowExecute, CanExecute);
         }
 
         private void EventHandlerMethod(string eventArg)
@@ -56,7 +62,12 @@ namespace PrismTestV2.ViewModels.Subscriber
 
         private void ExecuteCommand()
         {
-            _eventAggregator.GetEvent<EventNameTest>().Publish("Event args!!!");
+            _eventAggregator.GetEvent<EventNameTest>().Publish("Event args!!! from subscriber");
+        }
+
+        private void GoToMainWindowExecute()
+        {
+            _navigationService.Navigate("MainPage", null);
         }
     }
 }
