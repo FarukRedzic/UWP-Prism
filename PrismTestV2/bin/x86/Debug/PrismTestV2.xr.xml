@@ -5,6 +5,7 @@
     <RootPropertyPathName Name="Surname" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Customers" />
+    <RootPropertyPathName Name="AddCustomerCommand" />
     <RootPropertyPathName Name="GoToCustomersCommand" />
     <RootPropertyPathName Name="TestCommand" />
     <RootPropertyPathName Name="Test" />

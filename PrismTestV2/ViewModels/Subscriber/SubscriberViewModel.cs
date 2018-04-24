@@ -62,7 +62,7 @@ namespace PrismTestV2.ViewModels.Subscriber
 
         private void ExecuteCommand()
         {
-            _eventAggregator.GetEvent<EventNameTest>().Publish("Event args!!! from subscriber");
+            _eventAggregator.GetEvent<EventNameTest>().Publish("Event args!!! from subscriber view");
         }
 
         private void GoToMainWindowExecute()

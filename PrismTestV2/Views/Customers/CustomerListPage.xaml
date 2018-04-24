@@ -13,9 +13,8 @@
     <Grid Background="Green" HorizontalAlignment="Stretch">
         <StackPanel Orientation="Vertical" Background="Blue" HorizontalAlignment="Left">
             <TextBlock Text="Customeri..."/>
+            <Button Content="Add customer" Command="{Binding AddCustomerCommand}"/>
             <ItemsControl ItemsSource="{Binding Customers}" ItemTemplate="{StaticResource CustomerItemPage}"/>
         </StackPanel>
-        
-        
     </Grid>
 </storeApps:VisualStateAwarePage>

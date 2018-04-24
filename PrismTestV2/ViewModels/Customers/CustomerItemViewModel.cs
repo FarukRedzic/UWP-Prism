@@ -60,12 +60,5 @@ namespace PrismTestV2.ViewModels.Customers
             get { return _surname; }
             set { SetProperty(ref _surname, value); }
         }
-
-        private int myVar;
-        public int MyProperty
-        {
-            get { return myVar; }
-            set { myVar = value; }
-        }
     }
 }
