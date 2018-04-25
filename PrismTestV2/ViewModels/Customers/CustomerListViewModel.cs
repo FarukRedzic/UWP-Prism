@@ -17,13 +17,15 @@ namespace PrismTestV2.ViewModels.Customers
 
         #region Commands
         public DelegateCommand AddCustomerCommand { get; set; }
+        IUnityContainer _container;
         #endregion
 
         #region Properties
         public ObservableCollection<CustomerItemViewModel> Customers { get; set; }
         #endregion
-        public CustomerListViewModel(IUnityContainer _container)
+        public CustomerListViewModel(IUnityContainer container)
         {
+            _container = container; // container injection in case for manual resolving registered implementations (best practice is to avoid manual resolving)
             AddCustomerCommand = new DelegateCommand(AddCustomerExecute, CanExecute);
             Customers = new ObservableCollection<CustomerItemViewModel>();
             Customers.Add(new CustomerItemViewModel("Indira", "Djeldum", SetFocus));
