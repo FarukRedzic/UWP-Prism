@@ -26,9 +26,20 @@ namespace PrismTestV2.ViewModels.Customers
         {
             AddCustomerCommand = new DelegateCommand(AddCustomerExecute, CanExecute);
             Customers = new ObservableCollection<CustomerItemViewModel>();
-            Customers.Add(new CustomerItemViewModel("Indira", "Djeldum"));
-            Customers.Add(new CustomerItemViewModel("Edin", "Music"));
-            Customers.Add(new CustomerItemViewModel("Faruk", "Redzic"));
+            Customers.Add(new CustomerItemViewModel("Indira", "Djeldum", SetFocus));
+            Customers.Add(new CustomerItemViewModel("Edin", "Music", SetFocus));
+            Customers.Add(new CustomerItemViewModel("Faruk", "Redzic", SetFocus));
+        }
+
+        public void SetFocus(int customerId)
+        {
+            foreach (CustomerItemViewModel customer in Customers)
+            {
+                if (customer.CustomerId == customerId)
+                    customer.IsFocused = true;
+                else if(customer.IsFocused)
+                    customer.IsFocused = false;
+            }
         }
 
         private bool CanExecute()
@@ -38,7 +49,7 @@ namespace PrismTestV2.ViewModels.Customers
 
         private void AddCustomerExecute()
         {
-            Customers.Add(new CustomerItemViewModel("newCustomerName", "newCustomerSurname"));
+            Customers.Add(new CustomerItemViewModel("newCustomerName", "newCustomerSurname", SetFocus));
         }
 
         private string _myProperty;

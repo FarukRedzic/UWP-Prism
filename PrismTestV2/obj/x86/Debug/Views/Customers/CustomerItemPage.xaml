@@ -5,14 +5,21 @@
     xmlns:local="using:PrismTestV2.Views.Customers"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="using:PrismTestV2.Converters"
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </Page.Resources>
 
     <Grid Background="Red" Margin="0,0,0,15">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="{Binding Name}" Foreground="Black"/>
             <TextBlock Text="{Binding Surname}" Foreground="Black"/>
-
             <Button Content="Introduce!" Command="{Binding IntroduceCommand}"/>
+            <Grid Background="Yellow" Visibility="{Binding IsFocused, Converter={StaticResource BoolToVisibilityConverter}}">
+                <TextBlock Text="I'm selected!" Foreground="Black"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Page>
