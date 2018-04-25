@@ -10,12 +10,19 @@
     xmlns:storeApps="using:Microsoft.Practices.Prism.StoreApps"
     mvvm:ViewModelLocator.AutoWireViewModel="True">
 
-    <Grid Background="Green" HorizontalAlignment="Stretch">
-        <StackPanel Orientation="Vertical" Background="Blue" HorizontalAlignment="Left">
+    <Grid Background="Green" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid Background="Blue" HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
             <TextBlock Text="Customeri..."/>
-            <Button Content="Add customer" Command="{Binding AddCustomerCommand}"/>
-            <ItemsControl ItemsSource="{Binding Customers}" ItemTemplate="{StaticResource CustomerItemPage}"/>
-        </StackPanel>
+            <Button Grid.Row="1" Content="Add customer" Command="{Binding AddCustomerCommand}"/>
+            <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Visible">
+                <ItemsControl ItemsSource="{Binding Customers}" ItemTemplate="{StaticResource CustomerItemPage}"/>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </storeApps:VisualStateAwarePage>
 
